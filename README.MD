@@ -144,7 +144,7 @@ python train.py --gpu 0-1 --continue
 `--gpu 0,1` can be used instead of `--gpu 0-1`.
 
 ### Test
-`input_pose/name_of_input_pose.json` is pose estimation result of any other method. You have to rename the `input_pose/name_of_input_pose.json` and also `input_pose_path` of the `data/$DATASET/dataset.py`. The `input_pose/name_of_input_pose.json` should be follow [MS COCO format](http://cocodataset.org/#format-results).
+`input_pose/name_of_input_pose.json` is pose estimation result of any other method. You have to rename the it and also `input_pose_path` of the `data/$DATASET/dataset.py`. The `input_pose/name_of_input_pose.json` should be follow [MS COCO format](http://cocodataset.org/#format-results).
 
 Place trained model at the `output/model_dump/$DATASET/` and pose estimation result of any other method (`name_of_input_pose.json`) to `data/$DATASET/input_pose/`.
 
