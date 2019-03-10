@@ -1,10 +1,12 @@
 # PoseFix: Model-agnostic General Human Pose Refinement Network
+
+**PoseFix can make pose estimation result of any other method better from a single `.json` file!**
+
 <p align="center">
 <img src="https://cv.snu.ac.kr/research/PoseFix/figs/qualitative1.PNG" width="400" height="250"> <img src="https://cv.snu.ac.kr/research/PoseFix/figs/qualitative2.PNG" width="400" height="250">
 </p>
 
 ## Introduction
-**PoseFix can make pose estimation result of any other method better from a single `.json` file!**
 
 This repo is official **[TensorFlow](https://www.tensorflow.org)** implementation of **[PoseFix: Model-agnostic General Human Pose Refinement Network (CVPR 2019)](https://arxiv.org/abs/1812.03595)** for **model-agnostic human pose refinement** from a single RGB image. 
 **What this repo provides:**
