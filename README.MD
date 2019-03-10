@@ -129,7 +129,7 @@ ${POSE_ROOT}
 * In the `main/config.py`, you can change settings of the model including dataset to use, network backbone, and input size and so on.
 
 ### Train
-`input_pose/test_on_trainset/result.json` should be prepared before training. This is test result on the training set and used when synthesizing input pose of not annotated keypoints in the training stage. I used testing result of [TF-SimpleHumanPose](https://github.com/mks0601/TF-SimpleHumanPose). 
+`input_pose/test_on_trainset/result.json` should be prepared before training. This is test result on the training set and used when synthesizing input pose of not annotated keypoints in the training stage. Testing result of [TF-SimpleHumanPose](https://github.com/mks0601/TF-SimpleHumanPose) is used. 
 
 In the `main` folder, run
 ```bash
@@ -144,7 +144,7 @@ python train.py --gpu 0-1 --continue
 `--gpu 0,1` can be used instead of `--gpu 0-1`.
 
 ### Test
-`input_pose/name_of_input_pose.json` is pose estimation result of any other method. You have to rename the filename and also `input_pose_path` of the `data/$DATASET/dataset.py`. The input pose file should be follow [MS COCO format](http://cocodataset.org/#format-results).
+`input_pose/name_of_input_pose.json` is pose estimation result of any other method. You have to rename the `input_pose/name_of_input_pose.json` and also `input_pose_path` of the `data/$DATASET/dataset.py`. The `input_pose/name_of_input_pose.json` should be follow [MS COCO format](http://cocodataset.org/#format-results).
 
 Place trained model at the `output/model_dump/$DATASET/` and pose estimation result of any other method (`name_of_input_pose.json`) to `data/$DATASET/input_pose/`.
 
