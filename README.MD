@@ -2,7 +2,7 @@
 
 <p align="center">
  
-<b><i><font size="15">PoseFix makes pose result of any other method better from a single `.json` file!</font></i></b>
+<b><i><font size="25">PoseFix makes pose result of any other method better from a single `.json` file!</font></i></b>
  
 <img src="https://cv.snu.ac.kr/research/PoseFix/figs/qualitative1.PNG" width="400" height="250"> <img src="https://cv.snu.ac.kr/research/PoseFix/figs/qualitative2.PNG" width="400" height="250">
 </p>
