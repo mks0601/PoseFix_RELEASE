@@ -1,7 +1,7 @@
 # PoseFix: Model-agnostic General Human Pose Refinement Network
 
 <p align="center">
-<b><i><font size="250">PoseFix makes pose result of any other method better from a single `.json` file!</font></i></b>
+<b><i>PoseFix makes pose result of any other method better from a single `.json` file!</i></b>
 </p>
 
 <p align="center">
