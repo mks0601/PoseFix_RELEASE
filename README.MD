@@ -44,7 +44,7 @@ ${POSE_ROOT}
 * `data` contains data loading codes and soft links to images and annotations directories.
 * `lib` contains kernel codes for 2d multi-person pose estimation system.
 * `main` contains high-level codes for training or testing the network.
-* `tool` contains dataset converter. I set MS COCO as reference format and provide `mpii2coco` and `posetrack2coco` converting code.
+* `tool` contains dataset converter. `posetrack2coco_output.py` converts `posetrack` output files to `coco` format.
 * `output` contains log, trained models, visualized outputs, and test result.
 
 ### Data
@@ -98,8 +98,8 @@ ${POSE_ROOT}
 |       |-- resnet_v1_101.ckpt
 |       `-- resnet_v1_152.ckpt
 ```
-* In the `tool`, run `python mpii2coco.py` to convert MPII annotation files to MS COCO format (`MPII/annotations`).
-* In the `tool`, run `python posetrack2coco.py` to convert PoseTrack annotation files to MS COCO format (`PoseTrack/annotations`).
+* In the `tool` of [TF-SimpleHumanPose](https://github.com/mks0601/TF-SimpleHumanPose), run `python mpii2coco.py` to convert MPII annotation files to MS COCO format (`MPII/annotations`).
+* In the `tool` of [TF-SimpleHumanPose](https://github.com/mks0601/TF-SimpleHumanPose), run `python posetrack2coco.py` to convert PoseTrack annotation files to MS COCO format (`PoseTrack/annotations`).
 * Download imagenet pre-trained resnet models from [tf-slim](https://github.com/tensorflow/models/tree/master/research/slim) and place it in the `data/imagenet_weights`.
 * Except for `annotations` of the MPII and PoseTrack, all other directories are original version of downloaded ones.
 * If you want to add your own dataset, you have to convert it to [MS COCO format](http://cocodataset.org/#format-data).
