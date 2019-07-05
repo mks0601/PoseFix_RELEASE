@@ -1,4 +1,5 @@
 # PoseFix: Model-agnostic General Human Pose Refinement Network
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/posefix-model-agnostic-general-human-pose/multi-person-pose-estimation-on-coco)](https://paperswithcode.com/sota/multi-person-pose-estimation-on-coco?p=posefix-model-agnostic-general-human-pose)
 
 <p align="center">
 <b><i>PoseFix makes pose result of any methods better from a single '.json' file!</i></b>
@@ -163,6 +164,12 @@ As this repo outputs compatible output files for MS COCO and PoseTrack, you can 
 <p align="center">
 <img src="https://cv.snu.ac.kr/research/PoseFix/figs/ap_improvement_coco.PNG">
 </p>
+
+We additionally applied our PoseFix on [HRNet](https://arxiv.org/abs/1902.09212) (Ke etal. CVPR2019), and achieved the top performance.
+| Method              | AP | Ap .5 | AP .75 | AP (M) | AP (L) |    AR | AR .5 | AR .75 | AR (M) | AR (L) |
+|--------------------|-------|-------|--------|--------|--------|-------|-------|--------|--------|--------|
+| pose_hrnet_w48 |  76.3 | 90.8 |  82.9 |  72.3 |  83.4 | 81.2 | 94.2 |  87.1 |  76.7 |  87.6 |
+| **PoseFix** |  77.3 | 90.9 |  83.5 |  73.5 |  84.4 | 82.0 | 94.3 |  87.5 |  77.7 |  88.3 |
 
 * You have to set `dataset`, `backbone` and `input_shape` to those of the model in `config.py`.
 * Pre-trained PoseFix model (COCO 2017, ResNet-152, 384x288) [[model](https://cv.snu.ac.kr/research/PoseFix/COCO2017/model/PoseFix_coco2017_resnet152_384x288.zip)]
