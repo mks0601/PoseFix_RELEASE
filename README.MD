@@ -167,10 +167,17 @@ As this repo outputs compatible output files for MS COCO and PoseTrack, you can 
 
 We additionally applied our PoseFix on [HRNet](https://arxiv.org/abs/1902.09212) (Ke etal. CVPR2019), and achieved the top performance.
 
+#### MSCOCO 2017 validation set
 | Method    | AP | Ap .5 | AP .75 | AP (M) | AP (L) |    AR | AR .5 | AR .75 | AR (M) | AR (L) |
 |--------------------|-------|-------|--------|--------|--------|-------|-------|--------|--------|--------|
 | pose_hrnet_w48 |  76.3 | 90.8 |  82.9 |  72.3 |  83.4 | 81.2 | 94.2 |  87.1 |  76.7 |  87.6 |
 | **PoseFix** |  77.3 | 90.9 |  83.5 |  73.5 |  84.4 | 82.0 | 94.3 |  87.5 |  77.7 |  88.3 |
+
+#### MSCOCO 2017 test-dev set
+| Method    | AP | Ap .5 | AP .75 | AP (M) | AP (L) |    AR | AR .5 | AR .75 | AR (M) | AR (L) |
+|--------------------|-------|-------|--------|--------|--------|-------|-------|--------|--------|--------|
+| pose_hrnet_w48 |  75.5 | 92.5 |  83.3 |  71.9 |  81.5 | 80.5 | 95.7 |  87.4 |  76.3 |  86.3 |
+| **PoseFix** |  76.7 | 92.6 |  84.1 |  73.1 |  82.6 | 81.5 | 95.8 |  88.1 |  77.5 |  87.2 |
 
 * You have to set `dataset`, `backbone` and `input_shape` to those of the model in `config.py`.
 * Pre-trained PoseFix model (COCO 2017, ResNet-152, 384x288) [[model](https://cv.snu.ac.kr/research/PoseFix/COCO2017/model/PoseFix_coco2017_resnet152_384x288.zip)]
