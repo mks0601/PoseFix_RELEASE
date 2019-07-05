@@ -1,6 +1,7 @@
 # PoseFix: Model-agnostic General Human Pose Refinement Network
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/posefix-model-agnostic-general-human-pose/multi-person-pose-estimation-on-coco)](https://paperswithcode.com/sota/multi-person-pose-estimation-on-coco?p=posefix-model-agnostic-general-human-pose)
 
+
 <p align="center">
 <b><i>PoseFix makes pose result of any methods better from a single '.json' file!</i></b>
 </p>
