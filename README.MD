@@ -166,7 +166,8 @@ As this repo outputs compatible output files for MS COCO and PoseTrack, you can 
 </p>
 
 We additionally applied our PoseFix on [HRNet](https://arxiv.org/abs/1902.09212) (Ke etal. CVPR2019), and achieved the top performance.
-| Method              | AP | Ap .5 | AP .75 | AP (M) | AP (L) |    AR | AR .5 | AR .75 | AR (M) | AR (L) |
+
+| Method    | AP | Ap .5 | AP .75 | AP (M) | AP (L) |    AR | AR .5 | AR .75 | AR (M) | AR (L) |
 |--------------------|-------|-------|--------|--------|--------|-------|-------|--------|--------|--------|
 | pose_hrnet_w48 |  76.3 | 90.8 |  82.9 |  72.3 |  83.4 | 81.2 | 94.2 |  87.1 |  76.7 |  87.6 |
 | **PoseFix** |  77.3 | 90.9 |  83.5 |  73.5 |  84.4 | 82.0 | 94.3 |  87.5 |  77.7 |  88.3 |
