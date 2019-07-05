@@ -9,6 +9,11 @@
 <img src="https://cv.snu.ac.kr/research/PoseFix/figs/qualitative1.PNG" width="400" height="250"> <img src="https://cv.snu.ac.kr/research/PoseFix/figs/qualitative2.PNG" width="400" height="250">
 </p>
 
+## News
+
+We achieved top performance by refining the state-of-the-art ([HRNet](https://arxiv.org/abs/1902.09212), CVPR 2019). You can always make your results better!
+
+
 ## Introduction
 
 This repo is official **[TensorFlow](https://www.tensorflow.org)** implementation of **[PoseFix: Model-agnostic General Human Pose Refinement Network (CVPR 2019)](https://arxiv.org/abs/1812.03595)** for **model-agnostic human pose refinement** from a single RGB image. 
