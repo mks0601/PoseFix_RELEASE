@@ -136,7 +136,7 @@ ${POSE_ROOT}
 * In the `main/config.py`, you can change settings of the model including dataset to use, network backbone, and input size and so on.
 
 ### Train
-`input_pose/test_on_trainset/result.json` should be prepared before training. This is test result on the training set and used when synthesizing input pose of not annotated keypoints in the training stage. Testing result of [TF-SimpleHumanPose](https://github.com/mks0601/TF-SimpleHumanPose) is used. 
+`input_pose/test_on_trainset/result.json` should be prepared before training. This is test result on the training set with the groundtruth bbox and used when synthesizing input pose of not annotated keypoints in the training stage. Testing result of [TF-SimpleHumanPose](https://github.com/mks0601/TF-SimpleHumanPose) is used. 
 
 In the `main` folder, run
 ```bash
