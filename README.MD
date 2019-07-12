@@ -198,6 +198,10 @@ We additionally applied our PoseFix on [HRNet](https://arxiv.org/abs/1902.09212)
 * Pre-trained PoseFix model (PoseTrack 2018, ResNet-152, 384x288) [[model](https://cv.snu.ac.kr/research/PoseFix/PoseTrack2018/model/PoseFix_posetrack2018_resnet152_384x288.zip)]
 * Testing result on the PoseTrack 2018 training set of [TF-SimpleHumanPose](https://github.com/mks0601/TF-SimpleHumanPose) [[kps](https://cv.snu.ac.kr/research/PoseFix/PoseTrack2018/test_on_trainset/result.json)]
 
+## Troubleshoot
+Those who are suffer from out of bound index issue, please refer this [issue](https://github.com/mks0601/PoseFix_RELEASE/issues/8). According to [TF docs](https://www.tensorflow.org/api_docs/python/tf/scatter_nd), `tf.scatter_nd` will ignore out of bound indices in GPU mode. However, `BruceLeeeee` had a issue with that and fixed by clipping coordinates.
+
+
 ## Acknowledgements
 This repo is largely modified from [TensorFlow repo of CPN](https://github.com/chenyilun95/tf-cpn) and [PyTorch repo of Simple](https://github.com/Microsoft/human-pose-estimation.pytorch).
 
