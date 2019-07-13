@@ -79,6 +79,9 @@ class Model(ModelDesc):
         x_floor = tf.floor(x)
         y_floor = tf.floor(y)
 
+        x_floor = tf.clip_by_value(x_floor, 0, output_shape[1] - 1)  # fix out-of-bounds x
+        y_floor = tf.clip_by_value(y_floor, 0, output_shape[0] - 1)  # fix out-of-bounds y
+
         indices_batch = tf.expand_dims(tf.to_float(\
                 tf.reshape(
                 tf.transpose(\
