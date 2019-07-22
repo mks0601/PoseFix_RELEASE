@@ -199,7 +199,9 @@ We additionally applied our PoseFix on [HRNet](https://arxiv.org/abs/1902.09212)
 * Testing result on the PoseTrack 2018 training set of [TF-SimpleHumanPose](https://github.com/mks0601/TF-SimpleHumanPose) [[kps](https://cv.snu.ac.kr/research/PoseFix/PoseTrack2018/test_on_trainset/result.json)]
 
 ## Troubleshoot
-Those who are suffer from out of bound index issue, please refer this [issue](https://github.com/mks0601/PoseFix_RELEASE/issues/8). According to [TF docs](https://www.tensorflow.org/api_docs/python/tf/scatter_nd), `tf.scatter_nd` will ignore out of bound indices in GPU mode. However, `BruceLeeeee` had a issue with that and fixed by clipping coordinates.
+1. Those who are suffer from out of bound index issue, please refer this [issue](https://github.com/mks0601/PoseFix_RELEASE/issues/8). According to [TF docs](https://www.tensorflow.org/api_docs/python/tf/scatter_nd), `tf.scatter_nd` will ignore out of bound indices in GPU mode. However, `BruceLeeeee` had a issue with that and fixed by clipping coordinates.
+
+2. For those who suffer from `FileNotFoundError: [Errno 2] No such file or directory: 'tmp_result_0.pkl'` in testing stage, **please prepare human detection result and input pose properly**. The pkl files are generated and deleted automatically in testing stage, so you don't have to prepare them. Most of this error comes from inproper human detection file.
 
 
 ## Acknowledgements
