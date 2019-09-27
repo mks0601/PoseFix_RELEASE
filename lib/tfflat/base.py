@@ -203,7 +203,7 @@ class Trainer(Base):
         xmin = np.maximum(dst_roi[:,0], src_roi[:,0])
         ymin = np.maximum(dst_roi[:,1], src_roi[:,1])
         xmax = np.minimum(dst_roi[:,0]+dst_roi[:,2], src_roi[:,0]+src_roi[:,2])
-        ymax = np.minimum(dst_roi[:,1]+dst_roi[:,3], src_roi[:,0]+src_roi[:,3])
+        ymax = np.minimum(dst_roi[:,1]+dst_roi[:,3], src_roi[:,1]+src_roi[:,3])
         
         interArea = np.maximum(0, xmax - xmin) * np.maximum(0, ymax - ymin)
         
