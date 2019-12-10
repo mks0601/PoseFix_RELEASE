@@ -162,7 +162,7 @@ python test.py --gpu 0-1 --test_epoch 140
 to test the network on the GPU 0,1 with 140th epoch trained model. `--gpu 0,1` can be used instead of `--gpu 0-1`.
 
 ## Results
-Here I report the performance of the PoseFix. Also, I provide pre-trained models of the PoseFix and `test_on_trainset/result.json`.
+Here I report the performance of the PoseFix. Also, you can download pre-trained models of the PoseFix in [here](https://drive.google.com/drive/folders/1ip5aMZRF-uuWUWeoWazWCFx4E56Kb6Id?usp=sharing) and `test_on_trainset/result.json` in [here](https://drive.google.com/drive/folders/1XRIV9TmG29z1o1aSs4cQEw3FD_Nma2Ny?usp=sharing).
  
 As this repo outputs compatible output files for MS COCO and PoseTrack, you can directly use [cocoapi](https://github.com/cocodataset/cocoapi) or [poseval]( https://github.com/leonid-pishchulin/poseval) to evaluate result on the MS COCO or PoseTrack dataset. You have to convert the produced `mat` file to MPII `mat` format to evaluate on MPII dataset following [this](http://human-pose.mpi-inf.mpg.de/#evaluation).
 
@@ -186,8 +186,6 @@ We additionally applied our PoseFix on [HRNet](https://arxiv.org/abs/1902.09212)
 | **PoseFix + HRNet** |  76.7 | 92.6 |  84.1 |  73.1 |  82.6 | 81.5 | 95.8 |  88.1 |  77.5 |  87.2 |
 
 * You have to set `dataset`, `backbone` and `input_shape` to those of the model in `config.py`.
-* Pre-trained PoseFix model (COCO 2017, ResNet-152, 384x288) [[model](https://cv.snu.ac.kr/research/PoseFix/COCO2017/model/PoseFix_coco2017_resnet152_384x288.zip)]
-* Testing result on the COCO 2017 training set of [TF-SimpleHumanPose](https://github.com/mks0601/TF-SimpleHumanPose) [[kps](https://cv.snu.ac.kr/research/PoseFix/COCO2017/test_on_trainset/result.json)]
 
 ### Results on PoseTrack 2018 dataset
 <p align="center">
@@ -195,8 +193,6 @@ We additionally applied our PoseFix on [HRNet](https://arxiv.org/abs/1902.09212)
 </p>
 
 * You have to set `dataset`, `backbone` and `input_shape` to those of the model in `config.py`.
-* Pre-trained PoseFix model (PoseTrack 2018, ResNet-152, 384x288) [[model](https://cv.snu.ac.kr/research/PoseFix/PoseTrack2018/model/PoseFix_posetrack2018_resnet152_384x288.zip)]
-* Testing result on the PoseTrack 2018 training set of [TF-SimpleHumanPose](https://github.com/mks0601/TF-SimpleHumanPose) [[kps](https://cv.snu.ac.kr/research/PoseFix/PoseTrack2018/test_on_trainset/result.json)]
 
 ## Troubleshoot
 1. Those who are suffer from out of bound index issue, please refer this [issue](https://github.com/mks0601/PoseFix_RELEASE/issues/8). According to [TF docs](https://www.tensorflow.org/api_docs/python/tf/scatter_nd), `tf.scatter_nd` will ignore out of bound indices in GPU mode. However, `BruceLeeeee` had a issue with that and fixed by clipping coordinates.
