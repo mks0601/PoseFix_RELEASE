@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<img src="https://drive.google.com/uc?export=view&id=1QVtk-7gfYntgMX9MGLecLsTFwrfUYFK3" width="400" height="250"> <img src="https://drive.google.com/uc?export=view&id=1fxrh-VbVC8CSaopikD9YddgSWUjkWoDb" width="400" height="250">
+<img src="assets/qualitative1.PNG" width="400" height="250"> <img src="assets/qualitative2.PNG" width="400" height="250">
 </p>
 
 ## News
@@ -168,7 +168,7 @@ As this repo outputs compatible output files for MS COCO and PoseTrack, you can 
 
 ### Results on MSCOCO 2017 dataset
 <p align="center">
-<img src="https://drive.google.com/uc?export=view&id=1A55SUMh4jHL5pGqcXZJ8oOtkunmwZlLL">
+<img src="assets/ap_improvement_coco.PNG">
 </p>
 
 We additionally applied our PoseFix on [HRNet](https://arxiv.org/abs/1902.09212) (Ke etal. CVPR2019), and achieved the top performance.
@@ -189,7 +189,7 @@ We additionally applied our PoseFix on [HRNet](https://arxiv.org/abs/1902.09212)
 
 ### Results on PoseTrack 2018 dataset
 <p align="center">
-<img src="https://drive.google.com/uc?export=view&id=10wsDskS0GGx_Atz04w-WDBqnAV6Cx-J6">
+<img src="assets/ap_improvement_posetrack.PNG">
 </p>
 
 * You have to set `dataset`, `backbone` and `input_shape` to those of the model in `config.py`.
