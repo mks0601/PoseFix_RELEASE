@@ -162,7 +162,7 @@ python test.py --gpu 0-1 --test_epoch 140
 to test the network on the GPU 0,1 with 140th epoch trained model. `--gpu 0,1` can be used instead of `--gpu 0-1`.
 
 ## Results
-Here I report the performance of the PoseFix. Also, you can download pre-trained models of the PoseFix in [here](https://1drv.ms/f/s!All7gdNh7XE5nmnA-Eo4kyf6Alab?e=mBzslG) and `test_on_trainset/result.json` in [here](https://1drv.ms/f/s!All7gdNh7XE5nmXmc8_sWxutohaj?e=5nEfsW).
+Here I report the performance of the PoseFix. Also, you can download pre-trained models of the PoseFix in [here](https://drive.google.com/drive/folders/1v8J6h2x9iLeCs0Q6wkMOI1JzV31qKX-l?usp=sharing) and `test_on_trainset/result.json` in [here](https://drive.google.com/drive/folders/1CcRoyWWeVGOsOPTmcuVvL-OnaPEm93J7?usp=sharing).
  
 As this repo outputs compatible output files for MS COCO and PoseTrack, you can directly use [cocoapi](https://github.com/cocodataset/cocoapi) or [poseval]( https://github.com/leonid-pishchulin/poseval) to evaluate result on the MS COCO or PoseTrack dataset. You have to convert the produced `mat` file to MPII `mat` format to evaluate on MPII dataset following [this](http://human-pose.mpi-inf.mpg.de/#evaluation).
 
@@ -212,4 +212,3 @@ This repo is largely modified from [TensorFlow repo of CPN](https://github.com/c
   year = {2019}
 }
 ```
-
